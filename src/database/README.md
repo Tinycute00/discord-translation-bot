@@ -1,3 +1,25 @@
+# Database Operations Directory / 數據庫操作目錄
+
+[English](#database-operations-directory) | [中文](#數據庫操作目錄-1)
+
+This directory contains modules related to database operations for storing and retrieving bot settings.
+
+## File Descriptions
+
+- `languageSettings.js` - Manages emoji to language mapping settings
+- `channelSettings.js` - Manages channel automatic translation settings
+
+## Technical Implementation
+
+Currently using SQLite as the database solution, suitable for lightweight applications. Database files are stored in the `data` folder at the project root.
+
+## Data Storage
+
+- Emoji language mapping table: Stores the mapping between emojis and target languages
+- Channel settings table: Stores automatic translation configurations for channels
+
+---
+
 # 數據庫操作目錄
 
 這個目錄包含與資料庫操作相關的模組，用於存儲和檢索機器人設置。

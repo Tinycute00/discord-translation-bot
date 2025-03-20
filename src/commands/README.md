@@ -1,3 +1,34 @@
+# Commands Directory / 命令目錄
+
+[English](#commands-directory) | [中文](#命令目錄-1)
+
+This directory contains all the bot's slash commands, organized in different subdirectories by functionality.
+
+## Directory Structure
+
+- `settings/` - Commands related to bot settings, such as language and emoji settings
+  - `addLang.js` - Add emoji to language mapping
+  - `removeLang.js` - Remove emoji to language mapping
+  - `listLang.js` - List all configured languages
+  - `addChannel.js` - Add channel automatic translation settings
+  - `removeChannel.js` - Remove channel translation settings
+  - `listChannel.js` - List all configured channels
+
+- `bot/` - Basic bot management commands (e.g., help, status)
+
+## Command Format
+
+Each command file should export an object with the following properties:
+
+```javascript
+module.exports = {
+  data: SlashCommandBuilder, // Discord.js command builder
+  execute: async function(interaction) {} // Execution function
+};
+```
+
+---
+
 # 命令目錄
 
 這個目錄包含機器人的所有斜線命令，按功能分類放在不同的子目錄中。

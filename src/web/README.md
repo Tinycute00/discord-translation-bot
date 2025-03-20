@@ -1,3 +1,29 @@
+# Web Interface Directory / Web 介面目錄
+
+[English](#web-interface-directory) | [中文](#web-介面目錄-1)
+
+This directory contains files related to the optional Web management interface.
+
+## Directory Structure
+
+- `public/` - Static resource files
+- `views/` - Page templates
+- `webServer.js` - Web server entry file (not yet implemented)
+
+## Feature Description
+
+The Web interface is an optional feature that allows bot administrators to manage bot settings through a web interface.
+
+To enable this feature, set the following in the `.env` file:
+
+```
+ENABLE_WEB_INTERFACE=true
+```
+
+And make sure that the related Discord OAuth2 information is configured.
+
+---
+
 # Web 介面目錄
 
 這個目錄包含可選的 Web 管理界面相關文件。

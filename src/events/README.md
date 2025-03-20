@@ -1,3 +1,33 @@
+# Events Directory / 事件處理目錄
+
+[English](#events-directory) | [中文](#事件處理目錄-1)
+
+This directory contains handlers for Discord events.
+
+## File Descriptions
+
+- `ready.js` - Bot startup ready event handler
+- `interactionCreate.js` - Handles slash commands and other interactions
+- `messageReactionAdd.js` - Handles user adding emoji reactions
+- `messageCreate.js` - Handles new message creation events
+
+## Event Handler Format
+
+Each event handler file should follow this format:
+
+```javascript
+module.exports = {
+  name: 'eventName', // Discord.js event name
+  once: false, // Whether to execute only once
+  
+  execute(eventArgs, client) {
+    // Event handling logic
+  }
+};
+```
+
+---
+
 # 事件處理目錄
 
 這個目錄包含處理Discord事件的處理程序。
